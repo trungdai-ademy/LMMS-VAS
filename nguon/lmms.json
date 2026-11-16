@@ -1,0 +1,544 @@
+{
+ "id": "lmms",
+ "version": "1.3.0-alpha.2",
+ "method": "evidence",
+ "confidence": "exact",
+ "components": [
+  {
+   "name": "LMMS",
+   "version": "1.3.0-alpha.2",
+   "license": "GPL-2.0-or-later",
+   "url": "https://github.com/LMMS/lmms/archive/4e677cb6c6ab7ac8bec221097053753c1eb273e3.tar.gz",
+   "bytes": 17028802,
+   "evidence": "tag v1.3.0-alpha.2 (tag object aa6f800b89d5406a05201d5be1ca93c1cced7757) -> commit 4e677cb6c6ab7ac8bec221097053753c1eb273e3; lmms.exe VersionInfo 1.3.0-alpha.2; includes in-tree caps (GPL-2.0-or-later), LMMS plugins, VeSTige, DummyCarla stub (plugins/optional/libcarla_native-plugin.dll), data/"
+  },
+  {
+   "name": "ZynAddSubFX (LMMS fork)",
+   "version": "66a42efcc72d",
+   "license": "GPL-2.0-or-later",
+   "url": "https://github.com/lmms/zynaddsubfx/archive/66a42efcc72d4d75a70412795f1510c4297ab826.tar.gz",
+   "bytes": 1468692,
+   "evidence": "submodule gitlink at LMMS tag tree (git/trees API): plugins/ZynAddSubFx/zynaddsubfx -> zynaddsubfx.dll, RemoteZynAddSubFx.exe"
+  },
+  {
+   "name": "Carla (headers only)",
+   "version": "66afe24a0879",
+   "license": "GPL-2.0-or-later",
+   "url": "https://github.com/falkTX/Carla/archive/66afe24a08790732cc17d81d4b846a1e0cfa0118.tar.gz",
+   "bytes": 12379070,
+   "evidence": "submodule gitlink at LMMS tag tree (git/trees API): plugins/CarlaBase/carla; carlabase.dll compiled against carla/source/backend+includes (paths embedded); shipped libcarla_native-plugin.dll is LMMS DummyCarla.cpp stub (114 KB)"
+  },
+  {
+   "name": "Game_Music_Emu",
+   "version": "21a064ea66a5",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/libgme/game-music-emu/archive/21a064ea66a5cdf71910e207c4756095c266814f.tar.gz",
+   "bytes": 238154,
+   "evidence": "submodule gitlink at LMMS tag tree (git/trees API): plugins/FreeBoy/game-music-emu -> freeboy.dll"
+  },
+  {
+   "name": "AdPlug",
+   "version": "3ed6617ec000",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/adplug/adplug/archive/3ed6617ec00022dfab574c27710d9071a6032c87.tar.gz",
+   "bytes": 1271012,
+   "evidence": "submodule gitlink at LMMS tag tree (git/trees API): plugins/OpulenZ/adplug -> opulenz.dll"
+  },
+  {
+   "name": "Calf/veal LADSPA",
+   "version": "789d0faf9fae",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/lmms/veal/archive/789d0faf9faed430f48dfb93cf74e04afe88e39f.tar.gz",
+   "bytes": 16131035,
+   "evidence": "submodule gitlink at LMMS tag tree (git/trees API): plugins/LadspaEffect/calf/veal -> plugins/ladspa/veal.dll"
+  },
+  {
+   "name": "CMT LADSPA",
+   "version": "24599fb45b99",
+   "license": "GPL-2.0",
+   "url": "https://github.com/lmms/cmt/archive/24599fb45b99fff6302136f13adb3817e5833e7d.tar.gz",
+   "bytes": 64390,
+   "evidence": "submodule gitlink at LMMS tag tree (git/trees API): plugins/LadspaEffect/cmt/cmt -> plugins/ladspa/cmt.dll"
+  },
+  {
+   "name": "SWH LADSPA plugins",
+   "version": "0f54d2430feb",
+   "license": "GPL-2.0-or-later",
+   "url": "https://github.com/swh/ladspa/archive/0f54d2430febb4d5f02d13132dd91d7345e080b5.tar.gz",
+   "bytes": 442805,
+   "evidence": "submodule gitlink at LMMS tag tree (git/trees API): plugins/LadspaEffect/swh/ladspa -> plugins/ladspa/*_NNNN.dll (incl. fftw-linked imp/mbeq/pitch_scale)"
+  },
+  {
+   "name": "TAP LADSPA plugins",
+   "version": "85640223047d",
+   "license": "GPL-2.0-or-later",
+   "url": "https://github.com/lmms/tap-plugins/archive/85640223047d49a305e90ba1b92303eb066ba474.tar.gz",
+   "bytes": 56783,
+   "evidence": "submodule gitlink at LMMS tag tree (git/trees API): plugins/LadspaEffect/tap/tap-plugins -> plugins/ladspa/tap_*.dll"
+  },
+  {
+   "name": "portsmf",
+   "version": "081261bcfd8f",
+   "license": "MIT",
+   "url": "https://github.com/portsmf/portsmf/archive/081261bcfd8faca4cee8560010de34831c0dea97.tar.gz",
+   "bytes": 112042,
+   "evidence": "submodule gitlink at LMMS tag tree (git/trees API): plugins/MidiImport/portsmf -> midiimport.dll"
+  },
+  {
+   "name": "reSID",
+   "version": "ef72462f5fa0",
+   "license": "GPL-2.0-or-later",
+   "url": "https://github.com/libsidplayfp/resid/archive/ef72462f5fa0682d099413512b764ae479e77f9b.tar.gz",
+   "bytes": 84339,
+   "evidence": "submodule gitlink at LMMS tag tree (git/trees API): plugins/Sid/resid/resid -> sid.dll"
+  },
+  {
+   "name": "ExprTk",
+   "version": "a4b17d543f07",
+   "license": "MIT",
+   "url": "https://github.com/ArashPartow/exprtk/archive/a4b17d543f072d2e3ba564e4bc5c3a0d2b05c338.tar.gz",
+   "bytes": 1533267,
+   "evidence": "submodule gitlink at LMMS tag tree (git/trees API): plugins/Xpressive/exprtk -> xpressive.dll"
+  },
+  {
+   "name": "hiir",
+   "version": "4a9a1e67fa6f",
+   "license": "WTFPL",
+   "url": "https://github.com/LostRobotMusic/hiir/archive/4a9a1e67fa6f8ce7688e1c0c8a2b017cecd206a3.tar.gz",
+   "bytes": 77724,
+   "evidence": "submodule gitlink at LMMS tag tree (git/trees API): src/3rdparty/hiir/hiir (path embedded in lmms.exe)"
+  },
+  {
+   "name": "JACK2 headers",
+   "version": "ac334fabfb56",
+   "license": "LGPL-2.1-or-later (libjack headers)",
+   "url": "https://github.com/jackaudio/jack2/archive/ac334fabfb56989e9115ee6e2a77c1f6162d14fb.tar.gz",
+   "bytes": 953699,
+   "evidence": "submodule gitlink at LMMS tag tree (git/trees API): src/3rdparty/jack2 headers; JACK loaded at runtime via weakjack (libjack64.dll NOT shipped)"
+  },
+  {
+   "name": "ringbuffer",
+   "version": "1c46ef34a28d",
+   "license": "GPL-3.0",
+   "url": "https://github.com/JohannesLorenz/ringbuffer/archive/1c46ef34a28d4637b43fb6d5ebb31d38c05f4bd8.tar.gz",
+   "bytes": 49911,
+   "evidence": "submodule gitlink at LMMS tag tree (git/trees API): src/3rdparty/ringbuffer (path embedded in lmms.exe, analyzer/oscilloscope/vectorscope)"
+  },
+  {
+   "name": "weakjack",
+   "version": "fd11655be3b2",
+   "license": "GPL-2.0-or-later",
+   "url": "https://github.com/x42/weakjack/archive/fd11655be3b2efd6082968ecfe53f9cfe88bda2b.tar.gz",
+   "bytes": 7913,
+   "evidence": "submodule gitlink at LMMS tag tree (git/trees API): src/3rdparty/weakjack/weakjack (lmms.exe, LMMS_HAVE_WEAKJACK)"
+  },
+  {
+   "name": "fftw3",
+   "version": "3.3.10#10",
+   "license": "GPL-2.0-or-later",
+   "url": "https://www.fftw.org/fftw-3.3.10.tar.gz",
+   "bytes": 4144100,
+   "evidence": "vcpkg port fftw3 at b5d1a94fb7 (portfile SHA512 2d34b5ccac7b0874...); \"fftw-3.3.10\" string + buildtrees/fftw3 path; lmms.exe, zynaddsubfx, RemoteZynAddSubFx, analyzer, eq, slicert, swh imp/mbeq/pitch_scale. static in x64-mingw-static (toolchain cmake/toolchains/common/mingw-vcpkg.cmake); vcpkg.json at tag has NO builtin-baseline -> ports come from cached build/vcpkg_installed (cache key = hash(vcpkg.json), last changed 2026-04-01 #8218); embedded version strings match the vcpkg ports tree of runner image ubuntu24/20260329.72 (vcpkg b5d1a94fb7); identical version#port-version in vcpkg 751fdf7bbc..14de8214a1 (2026-03-09..04-06)"
+  },
+  {
+   "name": "fltk",
+   "version": "1.3.11#0",
+   "license": "LGPL-2.0-only WITH FLTK-exception",
+   "url": "https://github.com/fltk/fltk/archive/release-1.3.11.tar.gz",
+   "bytes": 5413151,
+   "evidence": "vcpkg port fltk at b5d1a94fb7 (portfile SHA512 b18ff6322349af44...); Fl_Widget symbols in RemoteZynAddSubFx.exe (no png/jpeg/freetype/fontconfig symbols linked). see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "fluidsynth",
+   "version": "2.5.2#1",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/FluidSynth/fluidsynth/archive/v2.5.2.tar.gz",
+   "bytes": 2111488,
+   "evidence": "vcpkg port fluidsynth at b5d1a94fb7 (portfile SHA512 5c376d9bf6388f04...); buildtrees/fluidsynth/src/v2.5.2-* path in sf2player.dll. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "gcem",
+   "version": "1.18.0#0",
+   "license": "Apache-2.0",
+   "url": "https://github.com/kthohr/gcem/archive/v1.18.0.tar.gz",
+   "bytes": 57834,
+   "evidence": "vcpkg port gcem at b5d1a94fb7 (portfile SHA512 b9bbf16cfc3488a9...); header-only build dependency of fluidsynth port (compile-time constexpr math). see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "libflac",
+   "version": "1.5.0#0",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/xiph/flac/archive/1.5.0.tar.gz",
+   "bytes": 974901,
+   "evidence": "vcpkg port libflac at b5d1a94fb7 (portfile SHA512 c8e119462205cfd8...); \"reference libFLAC 1.5.0 20250211\" in lmms.exe, sf2player.dll. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "libogg",
+   "version": "1.3.6#1",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/xiph/ogg/archive/v1.3.6.tar.gz",
+   "bytes": 254178,
+   "evidence": "vcpkg port libogg at b5d1a94fb7 (portfile SHA512 c247e1da8b12f8b3...); ogg_* symbols in lmms.exe, sf2player.dll. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "libsamplerate",
+   "version": "0.2.2#1",
+   "license": "BSD-2-Clause",
+   "url": "https://github.com/libsndfile/libsamplerate/archive/0.2.2.tar.gz",
+   "bytes": 3954784,
+   "evidence": "vcpkg port libsamplerate at b5d1a94fb7 (portfile SHA512 37e0fd604907caf9...); \"libsamplerate-0.2.2\" in lmms.exe. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "libsndfile",
+   "version": "1.2.2#1",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/libsndfile/libsndfile/archive/1.2.2.tar.gz",
+   "bytes": 684875,
+   "evidence": "vcpkg port libsndfile at b5d1a94fb7 (portfile SHA512 fb8b4d367240a8ac...); \"libsndfile-1.2.2\" in lmms.exe, sf2player.dll (features external-libs, mpeg). see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "libstk (STK)",
+   "version": "4.6.1#3",
+   "license": "MIT-like (STK license)",
+   "url": "https://github.com/thestk/stk/archive/4.6.1.tar.gz",
+   "bytes": 1215060,
+   "evidence": "vcpkg port libstk at b5d1a94fb7 (portfile SHA512 61d4db7b4a45446e...); stk:: symbols in malletsstk.dll; data/stk/rawwaves. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "libvorbis",
+   "version": "1.3.7#4",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/xiph/vorbis/archive/v1.3.7.tar.gz",
+   "bytes": 1234573,
+   "evidence": "vcpkg port libvorbis at b5d1a94fb7 (portfile SHA512 bfb6f5dbfd49ed38...); \"Xiph.Org libVorbis 1.3.7\" in lmms.exe, sf2player.dll. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "lilv",
+   "version": "0.26.4#0",
+   "license": "ISC",
+   "url": "https://gitlab.com/lv2/lilv/-/archive/v0.26.4/lilv-v0.26.4.tar.gz",
+   "bytes": 150897,
+   "evidence": "vcpkg port lilv at b5d1a94fb7 (portfile SHA512 4b39766a3340e545...); lilv_* symbols + vcpkg_installed/.../include/lilv-0 path in lmms.exe. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "lv2",
+   "version": "1.18.10#1",
+   "license": "ISC",
+   "url": "https://github.com/lv2/lv2/archive/v1.18.10.tar.gz",
+   "bytes": 299407,
+   "evidence": "vcpkg port lv2 at b5d1a94fb7 (portfile SHA512 d63a223b1e1ab928...); LV2 headers (lv2effect/lv2instrument, lmms.exe); dependency of lilv. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "mp3lame (LAME)",
+   "version": "3.100#16",
+   "license": "LGPL-2.0-only",
+   "url": "https://downloads.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz",
+   "bytes": 1524133,
+   "evidence": "vcpkg port mp3lame at b5d1a94fb7 (portfile SHA512 0844b9eadb4aacf8...); \"LAME3.100\" in lmms.exe, sf2player.dll. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "mpg123",
+   "version": "1.33.4#0",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://downloads.sourceforge.net/project/mpg123/mpg123/1.33.4/mpg123-1.33.4.tar.bz2",
+   "bytes": 1122088,
+   "evidence": "vcpkg port mpg123 at b5d1a94fb7 (portfile SHA512 9b7aa93b692132da...); \"1.33.4\" + buildtrees/mpg123 paths in lmms.exe, sf2player.dll. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "opus",
+   "version": "1.5.2#1",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/xiph/opus/archive/v1.5.2.tar.gz",
+   "bytes": 4183352,
+   "evidence": "vcpkg port opus at b5d1a94fb7 (portfile SHA512 4ffefd9c03567102...); \"libopus 1.5.2\" + buildtrees/opus/src/v1.5.2-* in lmms.exe, sf2player.dll. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "portaudio",
+   "version": "19.7#9",
+   "license": "MIT",
+   "url": "https://github.com/PortAudio/portaudio/archive/147dd722548358763a8b649b3e4b41dfffbcfbb6.tar.gz",
+   "bytes": 1463329,
+   "evidence": "vcpkg port portaudio at b5d1a94fb7 (portfile SHA512 0f56e5f5b004f519...); \"PortAudio V19.7.0-devel\" in lmms.exe, sf2player.dll (no ASIO feature). see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "SDL2",
+   "version": "2.32.10#0",
+   "license": "Zlib",
+   "url": "https://github.com/libsdl-org/SDL/archive/release-2.32.10.tar.gz",
+   "bytes": 7883298,
+   "evidence": "vcpkg port SDL2 at b5d1a94fb7 (portfile SHA512 d5622d6bb7266f79...); \"SDL-2.32.10-no-vcs\" + buildtrees/sdl2 path in lmms.exe. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "serd",
+   "version": "0.32.8#0",
+   "license": "ISC",
+   "url": "https://gitlab.com/drobilla/serd/-/archive/v0.32.8/serd-v0.32.8.tar.gz",
+   "bytes": 380213,
+   "evidence": "vcpkg port serd at b5d1a94fb7 (portfile SHA512 ff2dcdff0431d2a4...); serd_* symbols in lmms.exe. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "sord",
+   "version": "0.16.22#0",
+   "license": "ISC",
+   "url": "https://gitlab.com/drobilla/sord/-/archive/v0.16.22/sord-v0.16.22.tar.gz",
+   "bytes": 286842,
+   "evidence": "vcpkg port sord at b5d1a94fb7 (portfile SHA512 7e13d34f7dd014f0...); sord_* symbols in lmms.exe. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "sratom",
+   "version": "0.6.22#0",
+   "license": "ISC",
+   "url": "https://gitlab.com/lv2/sratom/-/archive/v0.6.22/sratom-v0.6.22.tar.gz",
+   "bytes": 25210,
+   "evidence": "vcpkg port sratom at b5d1a94fb7 (portfile SHA512 81d58155f3d42f1a...); installed dependency of lilv; no sratom symbols found in lmms.exe (may be dropped by static linker) - listed for safety. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "zix",
+   "version": "0.8.0#0",
+   "license": "ISC",
+   "url": "https://github.com/drobilla/zix/archive/v0.8.0.tar.gz",
+   "bytes": 102885,
+   "evidence": "vcpkg port zix at b5d1a94fb7 (portfile SHA512 dd3073c9740ddb3a...); zix_* symbols in lmms.exe. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "zlib (static, vcpkg)",
+   "version": "1.3.1#0",
+   "license": "Zlib",
+   "url": "https://github.com/madler/zlib/archive/v1.3.1.tar.gz",
+   "bytes": 1572744,
+   "evidence": "vcpkg port zlib at b5d1a94fb7 (portfile SHA512 8c9642495bafd6fa...); \"inflate 1.3.1\"/\"deflate 1.3.1\" static in zynaddsubfx.dll, RemoteZynAddSubFx.exe. see fftw3 entry for baseline evidence"
+  },
+  {
+   "name": "Qt5 qtbase (PPA orig)",
+   "version": "5.15.6-1",
+   "license": "LGPL-3.0-only OR GPL-2.0-or-later",
+   "url": "https://ppa.launchpadcontent.net/tobydox/mingw-w64/ubuntu/pool/main/q/qt5base-mingw-w64/qt5base-mingw-w64_5.15.6.orig.tar.gz",
+   "bytes": 50251924,
+   "evidence": "ppa:tobydox/mingw-w64 focal Sources: Qt5Core/Gui/Widgets/Xml.dll + platforms/qwindows.dll VersionInfo 5.15.6.0, \"Qt 5.15.6 ... by GCC 9.3-win32 20200320\"; PPA Sources md5 9b8ebd87844432a0af9e44b495087c63 (expected 50251924 bytes)"
+  },
+  {
+   "name": "Qt5 qtbase (PPA diff)",
+   "version": "5.15.6-1",
+   "license": "LGPL-3.0-only OR GPL-2.0-or-later",
+   "url": "https://ppa.launchpadcontent.net/tobydox/mingw-w64/ubuntu/pool/main/q/qt5base-mingw-w64/qt5base-mingw-w64_5.15.6-1.diff.gz",
+   "bytes": 7899,
+   "evidence": "ppa:tobydox/mingw-w64 focal Sources: packaging diff; md5 7b1a914e3e71a1340ab3ffde1e3eadca (expected 7899 bytes)"
+  },
+  {
+   "name": "Qt5 qtsvg (PPA orig)",
+   "version": "5.15.6-1",
+   "license": "LGPL-3.0-only OR GPL-2.0-or-later",
+   "url": "https://ppa.launchpadcontent.net/tobydox/mingw-w64/ubuntu/pool/main/q/qt5svg-mingw-w64/qt5svg-mingw-w64_5.15.6.orig.tar.gz",
+   "bytes": 1889953,
+   "evidence": "ppa:tobydox/mingw-w64 focal Sources: Qt5Svg.dll, iconengines/qsvgicon.dll, imageformats/qsvg.dll VersionInfo 5.15.6.0; md5 d71a5d3fcaeec96ddb91824fa1813f26 (expected 1889953 bytes)"
+  },
+  {
+   "name": "Qt5 qtsvg (PPA diff)",
+   "version": "5.15.6-1",
+   "license": "LGPL-3.0-only OR GPL-2.0-or-later",
+   "url": "https://ppa.launchpadcontent.net/tobydox/mingw-w64/ubuntu/pool/main/q/qt5svg-mingw-w64/qt5svg-mingw-w64_5.15.6-1.diff.gz",
+   "bytes": 1715,
+   "evidence": "ppa:tobydox/mingw-w64 focal Sources: md5 10b8bda932209882be19b5f38aad5f6f (expected 1715 bytes)"
+  },
+  {
+   "name": "libgig (PPA orig)",
+   "version": "4.0.0-4.1",
+   "license": "GPL-2.0-or-later",
+   "url": "https://ppa.launchpadcontent.net/tobydox/mingw-w64/ubuntu/pool/main/libg/libgig-mingw-w64/libgig-mingw-w64_4.0.0.orig.tar.gz",
+   "bytes": 700929,
+   "evidence": "ppa:tobydox/mingw-w64 focal Sources: libgig-7.dll (GCC 9.2/9.3-win32 focal toolchain, imported by gigplayer.dll); md5 b9b102f13189f1d6bb0087e93e0658df (expected 700929 bytes)"
+  },
+  {
+   "name": "libgig (PPA diff)",
+   "version": "4.0.0-4.1",
+   "license": "GPL-2.0-or-later",
+   "url": "https://ppa.launchpadcontent.net/tobydox/mingw-w64/ubuntu/pool/main/libg/libgig-mingw-w64/libgig-mingw-w64_4.0.0-4.1.diff.gz",
+   "bytes": 1481,
+   "evidence": "ppa:tobydox/mingw-w64 focal Sources: md5 53c169e3d7eccb023d95caefb6e9a442 (expected 1481 bytes)"
+  },
+  {
+   "name": "libpng (PPA orig)",
+   "version": "1.6.37-2.1",
+   "license": "Libpng",
+   "url": "https://ppa.launchpadcontent.net/tobydox/mingw-w64/ubuntu/pool/main/libp/libpng-mingw-w64/libpng-mingw-w64_1.6.37.orig.tar.gz",
+   "bytes": 1012900,
+   "evidence": "ppa:tobydox/mingw-w64 focal Sources: libpng16-16.dll \"libpng version 1.6.37\" (imported by Qt5Gui, qwindows; pulled by qt5base-mingw-w64 Depends); md5 da1df5bf6e97812d8334f0824df08197 (expected 1012900 bytes)"
+  },
+  {
+   "name": "libpng (PPA diff)",
+   "version": "1.6.37-2.1",
+   "license": "Libpng",
+   "url": "https://ppa.launchpadcontent.net/tobydox/mingw-w64/ubuntu/pool/main/libp/libpng-mingw-w64/libpng-mingw-w64_1.6.37-2.1.diff.gz",
+   "bytes": 1769,
+   "evidence": "ppa:tobydox/mingw-w64 focal Sources: md5 6e1017fb4fa16cfeee521ca058ee992b (expected 1769 bytes)"
+  },
+  {
+   "name": "zlib (libz-mingw-w64 orig)",
+   "version": "1.3.1+dfsg-1",
+   "license": "Zlib",
+   "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/libz-mingw-w64/1.3.1+dfsg-1/libz-mingw-w64_1.3.1+dfsg.orig.tar.xz",
+   "bytes": 1186380,
+   "evidence": "Ubuntu noble (runner image ubuntu24) Launchpad sourcefiles: zlib1.dll VersionInfo 1.3.1, built with GCC 13-win32 (noble); dependency libz-mingw-w64 of qt5base-mingw-w64; noble Release pocket version"
+  },
+  {
+   "name": "zlib (libz-mingw-w64 debian)",
+   "version": "1.3.1+dfsg-1",
+   "license": "Zlib",
+   "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/libz-mingw-w64/1.3.1+dfsg-1/libz-mingw-w64_1.3.1+dfsg-1.debian.tar.xz",
+   "bytes": 5656,
+   "evidence": "Ubuntu noble (runner image ubuntu24) Launchpad sourcefiles: packaging"
+  },
+  {
+   "name": "GCC MinGW runtime (gcc-mingw-w64 wrapper)",
+   "version": "26.1 (13.2.0-6ubuntu1+26.1)",
+   "license": "GPL-3.0-or-later WITH GCC-exception-3.1",
+   "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/gcc-mingw-w64/26.1/gcc-mingw-w64_26.1.tar.xz",
+   "bytes": 34428,
+   "evidence": "Ubuntu noble (runner image ubuntu24) Launchpad sourcefiles: libgcc_s_seh-1.dll, libstdc++-6.dll, libssp-0.dll, plugins/32/libgcc_s_dw2-1.dll, plugins/32/libstdc++-6.dll embed /usr/src/gcc-mingw-w64-26.1/...; \"GCC: (GNU) 13-posix\"; noble Release"
+  },
+  {
+   "name": "GCC 13 source (gcc-13 orig)",
+   "version": "13.2.0-6ubuntu1",
+   "license": "GPL-3.0-or-later WITH GCC-exception-3.1",
+   "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/gcc-13/13.2.0-6ubuntu1/gcc-13_13.2.0.orig.tar.gz",
+   "bytes": 92596024,
+   "evidence": "Ubuntu noble (runner image ubuntu24) Launchpad sourcefiles: gcc-mingw-w64 26.1 amd64 buildinfo: gcc-13-source (= 13.2.0-6ubuntu1) - actual GCC sources of the runtime DLLs"
+  },
+  {
+   "name": "GCC 13 source (gcc-13 debian)",
+   "version": "13.2.0-6ubuntu1",
+   "license": "GPL-3.0-or-later WITH GCC-exception-3.1",
+   "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/gcc-13/13.2.0-6ubuntu1/gcc-13_13.2.0-6ubuntu1.debian.tar.xz",
+   "bytes": 1654360,
+   "evidence": "Ubuntu noble (runner image ubuntu24) Launchpad sourcefiles: Ubuntu patches applied to GCC 13.2.0"
+  },
+  {
+   "name": "mingw-w64 (winpthreads + CRT) orig",
+   "version": "11.0.1-3build1",
+   "license": "MIT AND ZPL-2.1 AND public-domain (mingw-w64 COPYING)",
+   "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/mingw-w64/11.0.1-3build1/mingw-w64_11.0.1.orig.tar.bz2",
+   "bytes": 10057401,
+   "evidence": "Ubuntu noble (runner image ubuntu24) Launchpad sourcefiles: libwinpthread-1.dll (x64 + plugins/32) embed /usr/src/mingw-w64-11.0.1-3build1/...winpthreads; CRT objects in all LMMS binaries; same orig as 11.0.1-2 used inside the GCC runtime DLLs"
+  },
+  {
+   "name": "mingw-w64 debian (11.0.1-3build1)",
+   "version": "11.0.1-3build1",
+   "license": "MIT AND ZPL-2.1",
+   "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/mingw-w64/11.0.1-3build1/mingw-w64_11.0.1-3build1.debian.tar.xz",
+   "bytes": 108804,
+   "evidence": "Ubuntu noble (runner image ubuntu24) Launchpad sourcefiles: packaging/patches for winpthreads + CRT"
+  },
+  {
+   "name": "mingw-w64 debian (11.0.1-2)",
+   "version": "11.0.1-2",
+   "license": "MIT AND ZPL-2.1",
+   "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/mingw-w64/11.0.1-2/mingw-w64_11.0.1-2.debian.tar.xz",
+   "bytes": 108484,
+   "evidence": "Ubuntu noble (runner image ubuntu24) Launchpad sourcefiles: CRT 11.0.1-2 objects embedded in libgcc_s/libssp/libstdc++ DLLs (/usr/src/mingw-w64-11.0.1-2/mingw-w64-crt; buildinfo mingw-w64-x86-64-dev = 11.0.1-2)"
+  },
+  {
+   "name": "NSIS (orig)",
+   "version": "3.09-4ubuntu1",
+   "license": "Zlib AND bzip2-1.0.6 AND CPL-1.0 (LZMA, with exception)",
+   "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/nsis/3.09-4ubuntu1/nsis_3.09.orig.tar.gz",
+   "bytes": 2108487,
+   "evidence": "Ubuntu noble (runner image ubuntu24) Launchpad sourcefiles: Uninstall.exe manifest \"Nullsoft Install System v3.09-4\"; installer stub + $PLUGINSDIR InstallOptions/StartMenu/System/UserInfo.dll (GCC 13-win32/12-win32 = noble build); noble Release nsis 3.09-4ubuntu1"
+  },
+  {
+   "name": "NSIS (debian)",
+   "version": "3.09-4ubuntu1",
+   "license": "Zlib AND bzip2-1.0.6 AND CPL-1.0",
+   "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/nsis/3.09-4ubuntu1/nsis_3.09-4ubuntu1.debian.tar.xz",
+   "bytes": 25924,
+   "evidence": "Ubuntu noble (runner image ubuntu24) Launchpad sourcefiles: packaging"
+  }
+ ],
+ "buildRecipe": [
+  {
+   "name": "LMMS CI workflow + toolchain (in LMMS tag archive): .github/workflows/build.yml job mingw64, setup-mingw-packages.sh, deps-ubuntu-24.04-mingw.txt, cmake/toolchains/x64-mingw-vcpkg.cmake",
+   "url": "https://raw.githubusercontent.com/LMMS/lmms/4e677cb6c6ab7ac8bec221097053753c1eb273e3/.github/workflows/build.yml",
+   "bytes": 16495
+  },
+  {
+   "name": "vcpkg ports tree (portfiles + patches for all vcpkg components), commit of runner image ubuntu24/20260329.72",
+   "url": "https://github.com/microsoft/vcpkg/archive/b5d1a94fb7f88fd835e360fd23a45a09ceedbf48.tar.gz",
+   "bytes": 5078818
+  },
+  {
+   "name": "vcpkg baseline.json at that commit (version evidence)",
+   "url": "https://raw.githubusercontent.com/microsoft/vcpkg/b5d1a94fb7f88fd835e360fd23a45a09ceedbf48/versions/baseline.json",
+   "bytes": 219574
+  },
+  {
+   "name": "LMMS vcpkg.json at tag (manifest, no builtin-baseline)",
+   "url": "https://raw.githubusercontent.com/LMMS/lmms/4e677cb6c6ab7ac8bec221097053753c1eb273e3/vcpkg.json",
+   "bytes": 1117
+  },
+  {
+   "name": "PPA Sources index (tobydox/mingw-w64 focal)",
+   "url": "https://ppa.launchpadcontent.net/tobydox/mingw-w64/ubuntu/dists/focal/main/source/Sources.gz",
+   "bytes": 7886
+  },
+  {
+   "name": "qt5base-mingw-w64 5.15.6-1 .dsc",
+   "url": "https://ppa.launchpadcontent.net/tobydox/mingw-w64/ubuntu/pool/main/q/qt5base-mingw-w64/qt5base-mingw-w64_5.15.6-1.dsc",
+   "bytes": 1223
+  },
+  {
+   "name": "qt5svg-mingw-w64 5.15.6-1 .dsc",
+   "url": "https://ppa.launchpadcontent.net/tobydox/mingw-w64/ubuntu/pool/main/q/qt5svg-mingw-w64/qt5svg-mingw-w64_5.15.6-1.dsc",
+   "bytes": 1168
+  },
+  {
+   "name": "libgig-mingw-w64 4.0.0-4.1 .dsc",
+   "url": "https://ppa.launchpadcontent.net/tobydox/mingw-w64/ubuntu/pool/main/libg/libgig-mingw-w64/libgig-mingw-w64_4.0.0-4.1.dsc",
+   "bytes": 1212
+  },
+  {
+   "name": "libpng-mingw-w64 1.6.37-2.1 .dsc",
+   "url": "https://ppa.launchpadcontent.net/tobydox/mingw-w64/ubuntu/pool/main/libp/libpng-mingw-w64/libpng-mingw-w64_1.6.37-2.1.dsc",
+   "bytes": 1153
+  },
+  {
+   "name": "gcc-mingw-w64 26.1 .dsc",
+   "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/gcc-mingw-w64/26.1/gcc-mingw-w64_26.1.dsc",
+   "bytes": 6777
+  },
+  {
+   "name": "gcc-mingw-w64 26.1 amd64 buildinfo (pins gcc-13-source 13.2.0-6ubuntu1, mingw-w64 11.0.1-2, binutils)",
+   "url": "https://launchpad.net/ubuntu/+source/gcc-mingw-w64/26.1/+build/26915144/+files/gcc-mingw-w64_26.1_amd64.buildinfo",
+   "bytes": 32645
+  },
+  {
+   "name": "gcc-13 13.2.0-6ubuntu1 .dsc",
+   "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/gcc-13/13.2.0-6ubuntu1/gcc-13_13.2.0-6ubuntu1.dsc",
+   "bytes": 27688
+  },
+  {
+   "name": "mingw-w64 11.0.1-3build1 .dsc",
+   "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/mingw-w64/11.0.1-3build1/mingw-w64_11.0.1-3build1.dsc",
+   "bytes": 2737
+  },
+  {
+   "name": "mingw-w64 11.0.1-2 .dsc",
+   "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/mingw-w64/11.0.1-2/mingw-w64_11.0.1-2.dsc",
+   "bytes": 2605
+  },
+  {
+   "name": "libz-mingw-w64 1.3.1+dfsg-1 .dsc",
+   "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/libz-mingw-w64/1.3.1+dfsg-1/libz-mingw-w64_1.3.1+dfsg-1.dsc",
+   "bytes": 2033
+  },
+  {
+   "name": "nsis 3.09-4ubuntu1 .dsc",
+   "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/nsis/3.09-4ubuntu1/nsis_3.09-4ubuntu1.dsc",
+   "bytes": 2204
+  },
+  {
+   "name": "runner image ubuntu24/20260329.72 software list (vcpkg commit b5d1a94fb7)",
+   "url": "https://raw.githubusercontent.com/actions/runner-images/ubuntu24/20260329.72/images/ubuntu/Ubuntu2404-Readme.md",
+   "bytes": 14264
+  }
+ ],
+ "residualGaps": "(1) vcpkg: LMMS vcpkg.json at the tag has no builtin-baseline/overrides and there is no vcpkg-configuration.json, so versions follow the runner's VCPKG_ROOT ports tree at the time build/vcpkg_installed was cached (CI cache key = hash(vcpkg.json); vcpkg.json last changed 2026-04-01, #8218). The September runner's vcpkg (30ef65cad9) has DIFFERENT versions (fluidsynth 2.5.7, opus 1.6.1, fftw 3.3.11), so the release used the cached April install. The vcpkg commit b5d1a94fb7 (image ubuntu24/20260329.72) is inferred: every embedded version string (libsndfile 1.2.2, libFLAC 1.5.0, libVorbis 1.3.7, opus 1.5.2, mpg123 1.33.4, LAME 3.100, fftw 3.3.10, libsamplerate 0.2.2, SDL 2.32.10, fluidsynth 2.5.2 path, PortAudio V19.7, zlib 1.3.1) matches it, and all 22 ports have identical version#port-version in vcpkg 751fdf7bbc (03-09), 596c7b12a7, b5d1a94fb7 and 14de8214a1 (04-06). Upstream versions are exact. The exact vcpkg commit, and so the port patch set, is near-certain but not proven from a log (the Actions logs need auth). (2) Versions of serd, sord, zix, lilv, lv2, sratom, ogg, libstk and fltk are not embedded as strings. They come from the same baseline, with symbols present (sratom symbols were not found; it is listed as a lilv dependency anyway). (3) fltk's vcpkg dependencies (libpng, libjpeg-turbo, freetype, fontconfig, expat, and others) were installed but none of their symbols appear in RemoteZynAddSubFx.exe, so they are not listed. (4) Not compiled or shipped, so not listed: Carla (only its headers are used; the shipped libcarla_native-plugin.dll is LMMS's DummyCarla stub), its nested submodule Carla-Plugins 3c0026da, zynaddsubfx nested submodule 'instruments' c5c91213 (the data/presets come from the LMMS tree), qt5-x11embed 499d737c, doc/wiki, and libjpeg-turbo-mingw-w64 (no qjpeg plugin shipped). (5) GitHub/GitLab archive URLs use tags for vcpkg ports. The content is pinned by the vcpkg portfile SHA512 (prefix in evidence), but codeload tarball bytes can differ in compression from the vcpkg-cached file. The submodule archives are by commit SHA. (6) The bytes of gcc-13 orig (about 90 MB) and Qt orig (50 MB) come from HEAD/Content-Length; nothing over 20 MB was downloaded. (7) Licence notes: lmms.exe links GPL-3.0 ringbuffer and fftw (GPL-2.0+), so the effective licence of lmms.exe is GPL-3.0. The NSIS stub is a separate program under Zlib/bzip2/CPL-1.0."
+}
